@@ -4,6 +4,10 @@
   <link rel="stylesheet"
     href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +25,12 @@
       <input type="text" name="embarked" placeholder="Embarked city" required="required" /> <br>
       <button type="submit" class="btn btn-primary btn block btn-large">Predict</button>
     </form>
-    {% if pred==1 %}
+    {% if pred == 1 %}
       <h4 class="alert alert-success">Will you survive? <span class="badge badge-success">Yes!</span></h4>
     {% else %}
       <h4 class="alert alert-success">Will you survive? <span class="badge badge-danger">No 😢!</span></h4>
     {% endif %}
-    <h3 class="alert alert-success">Likelihood of survival: {{likelihood}}</h3>
+    <h4 class="alert alert-success">Likelihood of survival: {{likelihood}}</h4>
   </div>
 </body>
 </html>
