@@ -1,3 +1,4 @@
 .idea
 .ipynb_checkpoints/
 settings.json
+/kaggle/titanic/catboost_info/
